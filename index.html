@@ -10,7 +10,57 @@
 </head>
 <body>
   <!-- Partie 01 : barre de navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top" data-bs-theme="dark" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> <i class="bi bi-shop"></i>dar el madina</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--debut menu-->
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#accueill">accueill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#galerie">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+        </li>
+          
+      </ul>
+      <!--fin menu-->
+     
+     
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+  « Nouveau : réservez votre table en ligne ! »
+  <button type="button" class="btn-close" data-bs-dismiss="alert" ></button>
+</div>
+     
   <!-- Partie 02 : jumbotron (#accueil) -->
+
+    <section id="accueil" class="p-5 mb-4 bg-body-tertiary rounded-3">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">Bienvenue chez Dar El Medina</h1>
+    <p class="col-md-8 fs-4"> Découvrir le menu </p>
+    <a href="#menu" class="btn btn-primary btn-lg">menu</a>
+  </div>
+</section>
+
   <!-- Partie 03 : cartes du menu (#menu) -->
   <!-- Partie 04 : carrousel (#galerie) -->
   <!-- Partie 05 : fenêtres modales -->
