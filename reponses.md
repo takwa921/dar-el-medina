@@ -65,3 +65,26 @@ collées sans espaces, le système de grille conserve des
  marges et des espacements clairs. Cela rend l'affichage 
 plus aéré, plus lisible et beaucoup plus confortable sur les petits écrans.
 
+## Q4.1
+Si on oublie la classe active, aucune diapositive ne s'affiche au début,
+ et si on oublie l'id, le carrousel ne fonctionne plus (les boutons et les indicateurs ne réagissent pas)
+
+## Q4.2
+Ce texte invisible s'adresse aux utilisateurs malvoyants qui utilisent un lecteur d'écran.
+
+## Q4.4
+Ces classes (d-none d-md-block) cachent la légende sur les mobiles (d-none) pour éviter de surcharger les petits écrans 
+et de masquer l'image, et l'affichent uniquement à partir des écrans moyens et grands (d-md-block) où il y a assez d'espace.
+
+## Q4.5
+Différence :
+Avec data-bs-ride="carousel", le carrousel tourne automatiquement dès le chargement de la page.
+Avec data-bs-ride="false", le carrousel reste immobile au début et ne se met en marche qu'après la première interaction de l'utilisateur (clic sur un bouton).
+
+## Q4.8
+Ce qui se passe :
+Si on duplique le carrousel en gardant le même id, les boutons de contrôle (flèches et indicateurs) du deuxième carrousel vont piloter et perturber le premier (ou ne fonctionneront plus correctement).
+
+Explication :
+En HTML, un id doit être unique dans toute la page. Le Bootstrap utilise cet id (via data-bs-target) pour cibler un carrousel précis. 
+Si deux éléments partagent le même id, les scripts JavaScript s'emmêlent les pinceaux et ne savent plus quel carrousel déclencher.

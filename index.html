@@ -244,9 +244,9 @@
 
       <div class="card text-bg-warning mb-3">
         <div class="row g-0">
-          <div class="col-md-4">
+          <div class="col-md-4 ">
             <img
-              src="makarouna.jpg"
+              src="menu.jpg"
               class="img-fluid rounded-start h-100 object-fit-cover"
               alt="Plat du jour"
             />
@@ -262,6 +262,61 @@
     </section>
 
     <!-- Partie 04 : carrousel (#galerie) -->
+
+    <section id="galerie">
+      <div id="carouselGalerie" class="carousel slide" data-bs-ride="carousel">
+        
+        <!--  (Indicators) -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="1" aria-label="diapositive 2"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="2" aria-label="diapositive 3"></button>
+          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="3" aria-label="diapositive 4"></button>
+        </div>
+    
+    
+        <div class="carousel-inner">
+          
+          <!-- 1. salle  -->
+          <div class="carousel-item active " data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/salle/1200/500" class="d-block w-100"  alt="salle">
+            <div class="carousel-caption d-none d-md-block">Salle</div>
+          </div>
+    
+          <!-- 2. terrasse -->
+          <div class="carousel-item" data-bs-interval="3000" >
+            <img src="https://picsum.photos/seed/terrasse/1200/500" class="d-block w-100" alt="terrasse">
+            <div class="carousel-caption d-none d-md-block">Terrasse</div>
+          </div>
+    
+          <!-- 3. cuisine -->
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/cuisine/1200/500" class="d-block w-100" alt="cuisine">
+            <div class="carousel-caption d-none d-md-block">Cuisine</div>
+          </div>
+    
+          <!-- 4. desserts -->
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://picsum.photos/seed/desserts/1200/500" class="d-block w-100" alt="desserts">
+            <div class="carousel-caption d-none d-md-block">Desserts</div>
+          </div>
+    
+        </div> 
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalerie" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGalerie" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    
+      </div>
+    </section>
+
+
+
     <!-- Partie 05 : fenêtres modales -->
     <!-- Partie 07 : contact et pied de page -->
 
