@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "nom": "Couscous au poisson",
+      "categorie": "Plats",
+      "prix": 28 ,
+      "image": "couscous.jpg",
+      "description": "Semoule fine, mérou et légumes de saison.",
+      "nouveau": true
+    },
+    {
+      "id": 2,
+      "nom": "Brik à l'œuf",
+      "categorie": "Entrées",
+      "prix": 12,
+      "image": "brik.webp",
+      "description": "Feuille de malsouka croustillante, œuf et thon.",
+      "nouveau": false
+    },
+    {
+        "id": 3,
+        "nom": "Ojja merguez",
+        "categorie": "Plats",
+        "prix": 10,
+        "image": "ija.webp",
+        "description": "Semoule fine, mérou et légumes de saison.",
+        "nouveau": true
+      },
+      {
+        "id": 4,
+        "nom": "Lablabi",
+        "categorie": "Plats",
+        "prix": 20,
+        "image": "lablabi.webp",
+        "description": "Semoule fine, mérou et légumes de saison.",
+        "nouveau": false
+      },
+ 
+  {
+    "id": 5,
+    "nom": "Makroudh",
+    "categorie": "Plats",
+    "prix": 38,
+    "image": "makrouth.webp",
+    "description": "Semoule fine, mérou et légumes de saison.",
+    "nouveau": false
+  },
+  {
+    "id": 6,
+    "nom": "Boisson",
+    "categorie": "Plats",
+    "prix": 40,
+    "image": "the.jpg",
+    "description": "Semoule fine, mérou et légumes de saison.",
+    "nouveau": false
+  }
+]
