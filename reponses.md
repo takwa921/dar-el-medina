@@ -88,3 +88,13 @@ Si on duplique le carrousel en gardant le même id, les boutons de contrôle (fl
 Explication :
 En HTML, un id doit être unique dans toute la page. Le Bootstrap utilise cet id (via data-bs-target) pour cibler un carrousel précis. 
 Si deux éléments partagent le même id, les scripts JavaScript s'emmêlent les pinceaux et ne savent plus quel carrousel déclencher.
+
+
+## Q5.5
+Je conserve :
+
+1)modal-dialog-centered : Pour offrir une meilleure expérience visuelle (UI/UX) centrée et agréable pour l'utilisateur.
+
+2)data-bs-backdrop="static" : Indispensable pour un formulaire de réservation. Cela évite que l'utilisateur ne perde accidentellement les données saisies s'il clique par erreur en dehors de la fenêtre.
+
+(Optionnel) modal-dialog-scrollable : Utile si le formulaire contient beaucoup de champs, afin de garantir que le bouton de validation reste toujours visible.

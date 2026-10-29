@@ -88,7 +88,11 @@
         <p class="col-md-8 fs-4">Découvrir le menu</p>
         <div class="d-grid gap-2 d-sm-flex-colum justify-content-sm-center">
           <a href="#menu" class="btn btn-primary btn-lg">menu</a>
-          <button class="btn btn-outline-light btn-lg">
+          <button
+            class="btn btn-outline-light btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#modalReservation"
+          >
             Réserver une table
           </button>
         </div>
@@ -112,7 +116,7 @@
             <div class="card-body">
               <h5 class="card-title">Couscous au poisson</h5>
               <p class="card-text">Yam yam</p>
-              <a href="#" class="btn btn-primary">Voir le détail</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom=" Couscous au poisson" data-image="couscous.jpg" data-description="Yam yam" data-prix="28 DT">Voir le détail</a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -135,7 +139,7 @@
             <div class="card-body">
               <h5 class="card-title">Brik à l'œuf</h5>
               <p class="card-text">y9olk lmathl isil mjrb w ma tsilch tbib</p>
-              <a href="#" class="btn btn-primary">Voir le détail</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom="Brik à l'œuf" data-image="brik.webp" data-description="y9olk lmathl isil mjrb w ma tsilch tbib" data-prix="8 DT">Voir le détail</a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -158,7 +162,7 @@
             <div class="card-body">
               <h5 class="card-title">Ojja merguez</h5>
               <p class="card-text">yadi 3ija bl merguez takl swab3k wraha</p>
-              <a href="#" class="btn btn-primary">Voir le détail</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom="Ojja merguez" data-image="ija.webp" data-description="yadi 3ija bl merguez takl swab3k wraha" data-prix="10 DT">Voir le détail</a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -181,7 +185,7 @@
             <div class="card-body">
               <h5 class="card-title">Lablabi</h5>
               <p class="card-text">kol w tbanin</p>
-              <a href="#" class="btn btn-primary">Voir le détail</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom="Lablabi" data-image="lablabi.webp" data-description="kol w tbanin" data-prix="9DT">Voir le détail</a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -204,7 +208,7 @@
             <div class="card-body">
               <h5 class="card-title">Makroudh</h5>
               <p class="card-text">n7na lasl w lba9i t9lid . kol wtfkrni</p>
-              <a href="#" class="btn btn-primary">Voir le détail</a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom="Makroudh" data-image="makrouth.webp" data-description="n7na lasl w lba9i t9lid . kol wtfkrni" data-prix="30DT">Voir le détail</a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -230,7 +234,7 @@
                 <li class="list-group-item">Menthe fraîche</li>
                 <li class="list-group-item">Pignons</li>
               </ol>
-              <a href="#" class="btn btn-primary">voir le détail </a>
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPlat" data-nom="Boisson" data-image="the.jpg" data-description=" 7aja woow" data-prix="20DT">voir le détail </a>
             </div>
             <div
               class="card-footer text-bg-success d-flex justify-content-between"
@@ -244,7 +248,7 @@
 
       <div class="card text-bg-warning mb-3">
         <div class="row g-0">
-          <div class="col-md-4 ">
+          <div class="col-md-4">
             <img
               src="menu.jpg"
               class="img-fluid rounded-start h-100 object-fit-cover"
@@ -265,62 +269,201 @@
 
     <section id="galerie">
       <div id="carouselGalerie" class="carousel slide" data-bs-ride="carousel">
-        
         <!--  (Indicators) -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
-          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="1" aria-label="diapositive 2"></button>
-          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="2" aria-label="diapositive 3"></button>
-          <button type="button" data-bs-target="#carouselGalerie" data-bs-slide-to="3" aria-label="diapositive 4"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselGalerie"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Diapositive 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselGalerie"
+            data-bs-slide-to="1"
+            aria-label="diapositive 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselGalerie"
+            data-bs-slide-to="2"
+            aria-label="diapositive 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselGalerie"
+            data-bs-slide-to="3"
+            aria-label="diapositive 4"
+          ></button>
         </div>
-    
-    
+
         <div class="carousel-inner">
-          
           <!-- 1. salle  -->
-          <div class="carousel-item active " data-bs-interval="3000">
-            <img src="https://picsum.photos/seed/salle/1200/500" class="d-block w-100"  alt="salle">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="https://picsum.photos/seed/salle/1200/500"
+              class="d-block w-100"
+              alt="salle"
+            />
             <div class="carousel-caption d-none d-md-block">Salle</div>
           </div>
-    
+
           <!-- 2. terrasse -->
-          <div class="carousel-item" data-bs-interval="3000" >
-            <img src="https://picsum.photos/seed/terrasse/1200/500" class="d-block w-100" alt="terrasse">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img
+              src="https://picsum.photos/seed/terrasse/1200/500"
+              class="d-block w-100"
+              alt="terrasse"
+            />
             <div class="carousel-caption d-none d-md-block">Terrasse</div>
           </div>
-    
+
           <!-- 3. cuisine -->
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://picsum.photos/seed/cuisine/1200/500" class="d-block w-100" alt="cuisine">
+            <img
+              src="https://picsum.photos/seed/cuisine/1200/500"
+              class="d-block w-100"
+              alt="cuisine"
+            />
             <div class="carousel-caption d-none d-md-block">Cuisine</div>
           </div>
-    
+
           <!-- 4. desserts -->
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="https://picsum.photos/seed/desserts/1200/500" class="d-block w-100" alt="desserts">
+            <img
+              src="https://picsum.photos/seed/desserts/1200/500"
+              class="d-block w-100"
+              alt="desserts"
+            />
             <div class="carousel-caption d-none d-md-block">Desserts</div>
           </div>
-    
-        </div> 
-    
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalerie" data-bs-slide="prev">
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselGalerie"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselGalerie" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselGalerie"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-    
       </div>
     </section>
 
-
-
     <!-- Partie 05 : fenêtres modales -->
+    <div class="modal " tabindex="-1" id="modalReservation" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Informations personnelles</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="form-label">Nom:</label>
+              <input type="text" class="form-control" required />
+
+              <label class="form-label">Prenom:</label>
+              <input type="text" class="form-control" required />
+
+              <label>Telephone:</label>
+              <input type="text" class="form-control" required />
+
+              <div class="row g-3 p-4">
+                <div class="col-md-6">
+                  <label class="form-label">Date :</label>
+                  <input type="date" class="form-control" required />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Heure:</label>
+                  <input type="time" class="form-control" required />
+                </div>
+              </div>
+
+              <label class="form-label">Nombre de personne:</label>
+              <select class="form-select">
+                <option selected disabled>
+                  Choisissez le nombre de personnes
+                </option>
+                <option value="1">1 personne</option>
+                <option value="2">2 personne</option>
+                <option value="3">3 personne</option>
+                <option value="4">4 personne</option>
+                <option value="5">5 personne</option>
+                <option value="6">6 personne</option>
+                <option value="7">7 personne</option>
+                <option value="8">8 personne</option>
+              </select>
+
+              <label class="form-label">Terrasse: </label>
+              <input
+                type="checkbox"
+                class="form-check"
+                aria-label="vous voulez une terrasse?"
+              />
+            </form>
+          </div>
+       
+           <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                Annuler
+                </button>
+                <button type="submit" class="btn btn-danger">
+                  Confirmer 
+                </button>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="modalPlat">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Voici votre commande</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid rounded" alt="Plat">
+            <p class="text-muted"></p>
+            <h4 class="text-danger fw-bold"></h4>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Partie 07 : contact et pied de page -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
